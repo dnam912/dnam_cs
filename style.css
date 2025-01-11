@@ -1,0 +1,221 @@
+body {
+    background-color: #000;
+    color: #eee;
+    font-family: Poppins;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    position: relative;
+    z-index: 100;
+}
+
+
+/* ========== ========== ELEMENTS IN BANNER ========== ========== */
+.banner {
+    background: url(artworks/snow.png) 20% 20%;
+
+    width: 100%;
+    height: 100vh;
+    /*margin-top: -70px;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    /*position: relative*/
+}
+/* Image cover
+.banner::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 0;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+    pointer-events: none;
+}*/
+
+.banner .content {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Gabarito', sans-serif;
+}
+.banner .content div:nth-child(1) {
+    font-size: 3em; /* 3em = 12px x 3 */
+
+    padding-left: 3%;
+}
+.banner .content div:nth-child(2) {
+    font-size: 20em; /* 20em = 12px x 20 */
+    font-weight: bold;
+
+    padding-left: 3%;
+}
+.banner .content div:nth-child(3) {
+    text-align: center; /* Align button in center */
+}
+.banner .content div button {
+    border: 1px solid #eee;
+    background-color: transparent;
+    padding: 10px 20px; /* left right */
+    letter-spacing: 5px;
+}
+
+
+/* ========== ========== ELEMENTS IN BANNER2 ========== ========== */
+.banner2 {
+    background: url(artworks/unnamed.jpg) 50% 50%;
+
+    width: 100%;
+    height: 100vh;
+    /*margin-top: -70px;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    /*position: relative*/
+}
+
+.banner2 .content {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Gabarito', sans-serif;
+}
+.banner2 .content div:nth-child(1) {
+    font-size: 3em; /* 3em = 12px x 3 */
+
+    padding-right: 3%;
+    text-align: right;
+}
+.banner2 .content div:nth-child(2) {
+    font-size: 20em; /* 20em = 12px x 20 */
+    font-weight: bold;
+
+    padding-right: 3%;
+    text-align: right;
+}
+.banner2 .content div:nth-child(3) {
+    text-align: center; /* Align button in center */
+}
+.banner2 .content div button {
+    border: 1px solid #eee;
+    background-color: transparent;
+    padding: 10px 20px; /* left right */
+    letter-spacing: 5px;
+}
+
+
+/* ========== ========== ELEMENTS IN BANNER3 ========== ========== */
+.banner3 {
+    background: url(artworks/NAM-FinalProject_ConceptArts_2D.png) 50% 50%;
+
+    width: 100%;
+    height: 100vh;
+    /*margin-top: -70px;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    /*position: relative*/
+}
+
+.banner3 .content {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Gabarito', sans-serif;
+}
+.banner3 .content div:nth-child(1) {
+    font-size: 3em; /* 3em = 12px x 3 */
+
+    padding-left: 3%;
+}
+.banner3 .content div:nth-child(2) {
+    font-size: 20em; /* 20em = 12px x 20 */
+    font-weight: bold;
+
+    padding-left: 3%;
+}
+.banner3 .content div:nth-child(3) {
+    text-align: center; /* Align button in center */
+}
+.banner3 .content div button {
+    border: 1px solid #eee;
+    background-color: transparent;
+    padding: 10px 20px; /* left right */
+    letter-spacing: 5px;
+}
+
+
+
+
+/* ========== ========== RESPONSIVE SIZE ========== ========== */
+/* Computer Display */
+@media screen and (max-width: 1200px) {
+    .banner .content {
+        font-size: 9px;
+    }
+
+    .banner2 .content {
+        font-size: 9px;
+    }
+
+    .banner3 .content {
+        font-size: 9px;
+    }
+}
+/* iPad Display */
+@media screen and (max-width: 992px) {
+    .banner .content {
+        font-size: 7px;
+    }
+
+    .banner2 .content {
+        font-size: 7px;
+    }
+
+    .banner3 .content {
+        font-size: 7px;
+    }
+}
+/* Phone Display */
+@media screen and (max-width: 678px) {
+    .banner .content {
+        font-size: 4px;
+    }
+
+    .banner2 .content {
+        font-size: 4px;
+    }
+
+    .banner3 .content {
+        font-size: 4px;
+    }
+}
