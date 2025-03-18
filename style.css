@@ -2,97 +2,102 @@
     padding: 0;
     margin: 0;
     box-sizing: boder-box;
-    list-style: none;
     text-decoration: none;
+    list-style: none;
 
-    background-color: #eee;
-    color: #000;
+    --color1: #000;
+    --color2: #FFF;
 }
 
 body {
-    font-family: Poppins;
+    background-color: #eee;
 }
 
-nav {
-    height: 70px;
+.container {
     width: 100%;
-    line-height: 70px;
-}
-
-label.logo {
-    font-family: 'Montserrat', sans-serif;
-    color: #000;
-    font-weight: bold;
-    font-size: 20px;
-
-    padding: 0px 50px;
-}
-
-nav ul {
-    float: right;
-    margin-right: 40px;
-}
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-    line-height: 10px;
-    font-size: 18px;
-}
-
-a:hover {
-    /*text-decoration: underline;*/
-    opacity: 0.5;
-    transition: 0.6s;
-}
-
-.checkbtn {
-    font-size: 20px;
-    color: #000;
-    line-height: 50px;
-    margin-right: 40px;
-    float: right;
-    display: none;  
-    cursor: pointer;
-}
-#check {
-    display: none;
-}
-
-/* Phone Display */
-@media (max-width: 578px) {
-    .checkbtn {
-        display: block;
-    }
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: lightblue;
-
-        top: 60px;
-        left: 0;
-        /*transform: translateX(0);*/ /*instead of left: 0*/
-        text-align: center;
-        transition: all .6s;
-    }
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-        line-height: 30px;
-    }
-    a:hover {
-        /*text-decoration: underline;*/
-        opacity: 0.5;
-        transition: 0.6s;
-        background: none;
-    }
-    #check:checked ~ ul {
-        transform: translateX(0);
-    }
+    min-height: 20vh; 
+    overflow-x: hidden;
+    position: relative;
 }
 
 section {
-    background: white;
-    background-size: cover;
-    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 60%; /* Adjust image size */
+    height: auto;
+    padding-left: 3rem;
+}
+
+p {
+    margin-right: auto; /* Push text to the right */
+    text-align: left; /* Align text inside <p> to the right */
+    width: 50%; /* Optional: Set text width */
+    font-size: larger;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    /*position: relative;*/
+    position: fixed;
+    justify-content: space-between; /*Menu starts from right side*/
+    align-items: center;
+    list-style: none;
+}
+
+.logo {
+    padding: 50px 70px;
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu {
+    margin-left: 50px; /*Aligns the open-menu box at right*/
+    display: flex;
+    position: relative; 
+    align-items: center;
+    font-size: larger;
+}
+.menu li a {
+    padding-right: 70px;
+    /*display: inline-block;*/
+    position: relative;
+    text-align: center;
+}
+
+li a {
+    transition: 0.5s ease-in-out;
+    color: var(--color1);
+}
+li a:hover {
+    opacity: 0.4;
+}
+
+.open-menu {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: none; /*Hides hamburguer icon*/
+}
+.open-menu i {
+    font-size: 2rem;
+    /*color: var(--color2);*/ /*REVIEW HERE*/
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    cursor: pointer;
+}
+
+#check { 
+    display: none;
 }

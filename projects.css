@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Kollektif;
+    src: url(fonts/Kollektif.ttf);
+}
+
+@font-face {
+    font-family: Gidole;
+    src: url(fonts/Gidole-Regular.otf);
+}
+
+h1 {
+    font-family: Kollektif;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Kollektif;
+    font-size: 3.2rem;
+}
+
+.aside-submenu {
+    margin-top: 150px;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+    align-items: start; /*align headers on the top in a line*/
+    justify-content: center;
+    text-align: center; /*align headers in the center*/
+
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+.aside-submenu span {
+    width: 100%; /*equal size of spans*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*
+.aside-submenu ul {
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+
+.inner-container {
+    /*margin-top: 10%;*/
+    padding: 150px 70px;
+    box-sizing: border-box;
+}
+
+/*
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box; */
+    /*padding: 150px 100px 70px 20px;*/
